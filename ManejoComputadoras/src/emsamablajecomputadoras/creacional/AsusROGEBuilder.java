@@ -16,8 +16,7 @@ public class AsusROGEBuilder extends ComputadorBuilder {
 
 	@Override
 	public void ConstruirSistemaOperativo() {
-		// TODO Auto-generated method stub
-		
+		compu.setOs(new SistemaOperativo("Windows",10,"PRO 64 bits"));
 	}
 
 	@Override

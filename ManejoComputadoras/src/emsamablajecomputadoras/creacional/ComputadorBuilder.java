@@ -3,6 +3,7 @@ package emsamablajecomputadoras.creacional;
 public abstract class ComputadorBuilder {
 	protected Computador compu;
 	
+	
 	public Computador getComputadora(){
 		return compu;
 	

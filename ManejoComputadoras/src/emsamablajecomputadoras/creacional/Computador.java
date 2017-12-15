@@ -9,7 +9,7 @@ package emsamablajecomputadoras.creacional;
  *
  * @author Palacios
  */
-public class Computador {
+public class Computador implements IComputador{
     private int ram;
     private SistemaOperativo os;
     private int almacenamiento;

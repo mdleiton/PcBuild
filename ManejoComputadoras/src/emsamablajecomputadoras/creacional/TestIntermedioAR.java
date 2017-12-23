@@ -2,13 +2,13 @@ package emsamablajecomputadoras.creacional;
 
 public class TestIntermedioAR extends AbstractTest{
 
-	TestIntermedioAR(ComputadorBuilder compu){
-		this.compu=compu;
+	TestIntermedioAR( String n){
+		this.nivel=n;
 	}
 	
 	@Override
 	public boolean valido() {
-		if (this.compu.getComputadora().getModelo() =="ROG" && this.compu.getComputadora().getAlmacenamiento()==1000) {
+		if (this.compu.getModelo() =="ROG" && this.compu.getAlmacenamiento()==1000) {
 			this.escribirMensaje("TestInicial completado con exito");
 			return true;
 		}

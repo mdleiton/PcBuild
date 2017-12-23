@@ -2,13 +2,13 @@ package emsamablajecomputadoras.creacional;
 
 public class TestIntermedioAZB extends AbstractTest {
 
-	TestIntermedioAZB(ComputadorBuilder compu){
-		this.compu=compu;
+	TestIntermedioAZB(String n){
+		this.nivel=n;
 	}
 	
 	@Override
 	public boolean valido() {
-		if (this.compu.getComputadora().getModelo() =="Zenbook" && this.compu.getComputadora().getAlmacenamiento()==500) {
+		if (this.compu.getModelo() =="Zenbook" && this.compu.getAlmacenamiento()==500) {
 			this.escribirMensaje("TestInicial completado con exito");
 			return true;
 		}

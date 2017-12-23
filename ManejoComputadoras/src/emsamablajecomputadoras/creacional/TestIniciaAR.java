@@ -2,8 +2,8 @@ package emsamablajecomputadoras.creacional;
 
 public class TestIniciaAR extends AbstractTest {
 
-	TestIniciaAR(ComputadorBuilder compu){
-		this.compu=compu;
+	TestIniciaAR( String n){
+		this.nivel=n;
 	}
 	
 	@Override
@@ -15,7 +15,7 @@ public class TestIniciaAR extends AbstractTest {
 	@Override
 	public boolean valido() {
 		SistemaOperativo so=new SistemaOperativo("Windows",64," 10 PRO");
-		if (this.compu.getComputadora().getMarca() =="Asus" && this.compu.getComputadora().getOs().equals(so)) {
+		if (this.compu.getMarca() =="Asus" && this.compu.getOs().equals(so)) {
 			this.escribirMensaje("TestInicial completado con exito");
 			return true;
 		}

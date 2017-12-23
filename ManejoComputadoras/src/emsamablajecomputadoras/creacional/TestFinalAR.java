@@ -1,15 +1,15 @@
 package emsamablajecomputadoras.creacional;
 
 public class TestFinalAR extends AbstractTest {
-
-	TestFinalAR(ComputadorBuilder compu){
-		this.compu=compu;
+	
+	TestFinalAR( String n){
+		this.nivel=n;
 	}
 	
 	@Override
 	public boolean valido() {
 		Mainboard mb=new Mainboard("Strix"," x99");
-		if (this.compu.getComputadora().getRam() ==32 && this.compu.getComputadora().getPlaca().equals(mb)) {
+		if (this.compu.getRam() ==32 && this.compu.getPlaca().equals(mb)) {
 			this.escribirMensaje("TestInicial completado con exito");
 			return true;
 		}
